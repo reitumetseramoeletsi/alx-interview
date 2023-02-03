@@ -70,5 +70,4 @@ if __name__ == "__main__":
 
 # prints coords of squares for safe queens
 
-    for squares in coords:
-        print(squares)
+    nqueens(int(sys.argv[1]))

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """List of Lists"""
 
+
 def canUnlockAll(boxes):
     """Unlock array of boxes of keys with indices"""
     size = len(boxes)
@@ -11,8 +12,8 @@ def canUnlockAll(boxes):
         if len(keys) == 0 or index == 0:
             checker[index] = -1  # -1 means box is empty
         for key in keys:
-                if key < size and key != index:
-                    checker[key] = key
+            if key < size and key != index:
+                checker[key] = key
         if len(checker) == size:
             return True
         index += 1
